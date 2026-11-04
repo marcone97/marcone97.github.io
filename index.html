@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il nostro Menù</title>
+  <meta name="theme-color" content="#f8f1e7">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e9dfd0;
+      color: #29251f;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .menu {
+      width: 100%;
+      max-width: 650px;
+      padding: 48px 38px;
+      background: #fffaf1;
+      border: 1px solid #c6a27d;
+      outline: 1px solid #c6a27d;
+      outline-offset: -9px;
+      box-shadow: 0 15px 45px #59432b20;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #98502c;
+      font-size: 11px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0 6px;
+      font: italic 600 clamp(48px, 10vw, 76px)
+        "Playfair Display", serif;
+    }
+
+    .subtitle {
+      color: #77685a;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .ornament {
+      margin: 25px auto;
+      color: #98502c;
+      font-size: 23px;
+    }
+
+    .dish {
+      padding: 15px 0 20px;
+    }
+
+    .course {
+      margin-bottom: 10px;
+      color: #98502c;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .food {
+      margin-bottom: 8px;
+      font-size: 36px;
+    }
+
+    h2 {
+      margin: 0;
+      font: 500 clamp(23px, 5vw, 32px)
+        "Playfair Display", serif;
+    }
+
+    .description {
+      margin: 10px 0 0;
+      color: #827467;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 65px;
+      height: 1px;
+      margin: 5px auto;
+      background: #c6a27d;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: #98502c;
+      font: italic 16px "Playfair Display", serif;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 18px 10px;
+      }
+
+      .menu {
+        padding: 38px 20px;
+      }
+
+      .course {
+        letter-spacing: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="menu">
+    <div class="eyebrow">Una tavola tutta italiana</div>
+
+    <h1>Menù</h1>
+
+    <div class="subtitle">Tradizione, gusto e dolcezza</div>
+
+    <div class="ornament">✦ ─── ❦ ─── ✦</div>
+
+    <section class="dish">
+      <div class="course">Primo</div>
+      <div class="food" aria-hidden="true">🍝</div>
+      <h2>Lasagne al ragù</h2>
+      <p class="description">
+        Sfoglie di pasta, ragù ricco e strati di pura bontà.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="dish">
+      <div class="course">Secondo</div>
+      <div class="food" aria-hidden="true">🥔</div>
+      <h2>Crocchè di patate</h2>
+      <p class="description">
+        Dorati e croccanti fuori, morbidi e filanti dentro.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="dish">
+      <div class="course">Dolce</div>
+      <div class="food" aria-hidden="true">🍰</div>
+      <h2>Torta Pan di Stelle</h2>
+      <p class="description">
+        Cioccolato, crema e biscotti: un finale irresistibile.
+      </p>
+    </section>
+
+    <div class="ornament">✦ ─── ❦ ─── ✦</div>
+
+    <footer>Buon appetito!</footer>
+  </main>
+</body>
+</html>
